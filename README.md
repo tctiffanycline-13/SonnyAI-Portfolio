@@ -75,4 +75,4 @@ It never sent anything to a customer, never guessed at missing details, and alwa
 
 *Thanks for stopping by! Sonny says hi. 👋*
 
-<sub>Company, customer and product names have been removed, and the examples are fictional. © Tiffany Donnelly. All rights reserved.</sub>
+<sub>Company, customer and product names have been removed, and the examples are fictional.</sub>
