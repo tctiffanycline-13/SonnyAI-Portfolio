@@ -1,0 +1,5 @@
+_working/
+.DS_Store
+*.key
+*_key.txt
+.env
