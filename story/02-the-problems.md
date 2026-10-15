@@ -1,73 +1,85 @@
-<sub><a href="../README.md">Sonny</a> › Chapter 2 of 9</sub>
+<sub><a href="../README.md">Sonny</a> / Chapter 02 of 08</sub>
 
 # 🧩 The Problems (and the People)
 
-### What was getting in the way, and who it was getting in the way of.
+### Before I could decide what Sonny should do, I needed to be clear about who needed help — and why.
+
+These weren't findings from a formal user research study. They came from the work I'd done as a CSM, Sales Engineer, onboarding leader, and Head of Professional Services, plus the everyday friction I saw across my team.
 
 ---
 
-These come from jobs I've actually done: Customer Success Manager, Sales Engineer, onboarding lead and Head of Professional Services. They aren't from a formal research study. They're the people I worked alongside and the problems we all complained about.
+## 01 / The problems kept showing up in different places
+
+![Five recurring problems across implementation work](assets/01-friction-points.png)
+
+The frustrating thing? Most of these weren't new problems. We'd found ways to work around them.
+
+A consultant managing 10–15 customers could have a perfectly good meeting, then spend the next hour turning it into notes, action items, and tickets. The information existed; it just wasn't organized in a way that made the next step easy.
+
+And some issues were more expensive than admin time. A missing detail in a support ticket meant another round of questions. A contradiction between the contract and the sales handoff could become a delivery problem weeks later.
+
+**The pattern I kept noticing:** people weren't short on information. They were short on time to find it, reconcile it, and act on it.
 
 ---
 
-## The problems
+## 02 / Same problems, different people
 
-**1. Everything you need exists. It's just in five places.**
-A consultant with 10–15 customers keeps each customer's story spread across meeting notes, email, Slack, a customer directory and a team tracker. Nothing's missing. You just spend your week putting it back together.
-
-**2. "Did I already handle that?" takes forever to answer.**
-Things get resolved in a Slack reply, a calendar invite, or another meeting. Miss one and you either chase something that's done (awkward) or drop something that isn't (worse).
-
-**3. A sloppy ticket keeps a customer waiting.**
-If a support ticket is missing details, Support has to ask before they can help. The customer stays stuck the whole time.
-
-**4. The prep documents don't agree with each other.**
-The contract, the sales handoff, the customer questionnaire and the scoping sheet are all separate. When they contradict each other, you find out weeks into the project.
-
-**5. The know-how lives in people's heads.**
-Knowing when to push back, what to check before kickoff, and when a launch date isn't realistic takes years to learn. That doesn't scale from 4 consultants to 15.
-
----
-
-## The people
+![Three Sonny user perspectives: consultant, team leader and new hire](assets/02-people.png)
 
 ### The implementation consultant
-> "I spend an hour after every call making sure nothing falls through, and I still worry something did."
 
-- **Their week:** 10–15 customers, one or two calls with each
-- **What gets in the way:** writing up every call, learning each product deeply, small "quick asks" that are really extra scope
-- **What great looks like:** walking into every call prepared, every follow-up done, and feeling confident saying "that's not in the contract, here's why"
-- **How Sonny helped:** drafted recaps and tickets; the copilot helped with call prep, contract review, troubleshooting and launch readiness
+**Their day:** Customer calls, project follow-ups, troubleshooting, and the occasional “quick ask” that isn't quick at all.
+
+**What they needed:** Less time documenting work and more confidence that nothing had been missed. They also needed help recognizing when a request went beyond the agreed scope.
+
+**Where Sonny fit:** Drafting recaps, support tickets, and action items; later, helping with call preparation and contract review through the team copilot pilot.
 
 ### The team leader (me)
-> "I need to know what's actually still open across fifteen people, without reading everything."
 
-- **Their week:** a global team across time zones, plus reporting to leadership
-- **What gets in the way:** inbox and Slack overload, status reports built by hand, everyone doing things a little differently
-- **What great looks like:** a short list of what really needs me, and a team that works the same way
-- **How Sonny helped:** Monday digest, meeting agendas, new-hire status reports, back-from-vacation catch-up
+**My day:** Leading a global team while trying to figure out what actually needed my attention.
+
+**What I needed:** A reliable view of unresolved work without reading every email, chat thread, and status update.
+
+**Where Sonny fit:** Monday digests, meeting agendas, onboarding status drafts, and catching up after time away.
 
 ### The new consultant
-> "I know the product from training. I don't yet know what an experienced consultant would worry about."
 
-- **Their week:** learning fast, often far from the senior people on the team
-- **What gets in the way:** knowing the product isn't the same as knowing how to run a project; help is a time zone away
-- **What great looks like:** handling a customer call without notes
-- **How Sonny helped:** product coaching and practice calls in the copilot
+**Their day:** Learning the product *and* learning how to manage real customer situations — sometimes with the experienced people in another time zone.
 
-### Who else noticed
-- **Support** got complete tickets and stopped chasing details.
-- **Customers** got consistent recaps with clear next steps and one place to find everything.
-- **My manager** got a weekly view of how new hires were ramping.
+**What they needed:** Guidance that went beyond where to click. What should I ask before kickoff? When should I push back? What makes a launch risky?
+
+**Where Sonny fit:** The team knowledge copilot pilot, including product coaching, call preparation, and practice scenarios.
 
 ---
 
-## What I chose not to fix
+## 03 / The people beyond the immediate user
 
-- **Creating content for customers.** It wasn't in our contracts, and it wasn't where the time went.
-- **Replacing the scoping spreadsheet.** It answers "how many hours." The missing question was "how risky," which became [the bigger idea](01-the-full-story.md#5-the-bigger-idea-implementation-prep-in-a-box).
-- **Sending anything to customers automatically.** A person always hits send. [Here's why.](06-keeping-ai-in-check.md)
+This was a useful lesson for me: **the person using a workflow isn't always the person who benefits most.**
+
+| Who else was affected | Why it mattered |
+|---|---|
+| **Support** | More complete tickets meant fewer clarification requests before they could investigate. |
+| **Customers** | Clearer recaps and follow-ups helped everyone stay aligned. |
+| **Leadership** | More consistent reporting made it easier to see where support or intervention was needed. |
+
+I first built Sonny to save *myself* time. But thinking about the downstream experience helped me see which improvements were actually valuable.
 
 ---
 
-<p align="center"><a href="01-the-full-story.md">← 📖 The Full Story</a> &nbsp;·&nbsp; <a href="03-how-sonny-grew.md">🌱 How Sonny Grew →</a></p>
+## 04 / What I deliberately didn't try to solve
+
+I had plenty of ideas. That didn't mean they all belonged in Sonny.
+
+- **Creating customer content.** It wasn't part of our implementation scope, and it wasn't the recurring bottleneck I was trying to fix.
+- **Replacing the scoping spreadsheet.** It helped estimate effort. The more interesting gap was identifying delivery risk *before* the plan was finalized.
+- **Automatically communicating with customers.** I wanted Sonny to prepare the work, not make commitments on someone's behalf.
+
+I started with the problems I could see and test, then used what I learned to shape the next version.
+
+**That's the thread through this whole project:** make the work easier without taking away the judgment that makes a good consultant valuable.
+
+---
+
+<sub>These are experience-based user perspectives, not quotes from formal research participants. Examples have been generalized to avoid sharing customer or company information.</sub>
+
+<p align="center"><a href="01-the-full-story.md">← The Full Story</a> &nbsp;·&nbsp; <a href="../README.md">Back to Sonny</a> &nbsp;·&nbsp; <a href="03-how-sonny-grew.md">How Sonny Grew →</a></p>
