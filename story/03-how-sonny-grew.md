@@ -8,7 +8,7 @@ I built Sonny while leading Professional Services in 2025–2026. At first, I ju
 
 The important distinction: **some of Sonny was built and used, some reached an early pilot, and the bigger implementation experience remained a concept.**
 
-![Sonny's five-stage evolution](assets/01-sonny-evolution.png)
+![Sonny's five-stage evolution](https://github.com/tctiffanycline-13/SonnyAI-Portfolio/blob/main/assets/06-sonny-evolution.png)
 
 ---
 
@@ -68,7 +68,7 @@ If that works, *then* build toward planning, provisioning, and personalized onbo
 
 ## What actually made it out of my head?
 
-![Built, piloted and planned capabilities](assets/02-capability-status.png)
+![Built, piloted and planned capabilities](https://github.com/tctiffanycline-13/SonnyAI-Portfolio/blob/main/assets/07-capability-status.png)
 
 <details>
 <summary><b>Show the capability details</b></summary>
@@ -90,7 +90,5 @@ The lesson I keep coming back to: **building something helpful for yourself is o
 And that's the part I'd love to keep working on.
 
 ---
-
-<sub>Personal portfolio case study. Built, piloted and proposed capabilities are intentionally separated.</sub>
 
 <p align="center"><a href="02-the-problems.md">← The Problems (and the People)</a> &nbsp; · &nbsp; <a href="../README.md">Back to Sonny</a> &nbsp; · &nbsp; <a href="04-what-sonny-did.md">What Sonny Did →</a></p>
