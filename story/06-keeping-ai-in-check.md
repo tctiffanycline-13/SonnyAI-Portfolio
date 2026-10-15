@@ -12,7 +12,7 @@ So I built rules around the work Sonny was allowed to *prepare* and the decision
 
 ## 01 / Draft first. Human approves.
 
-![Sonny's human approval flow](assets/01-human-approval-flow.png)
+![Sonny's human approval flow](https://github.com/tctiffanycline-13/SonnyAI-Portfolio/blob/main/assets/13-human-approval-flow.png)
 
 For customer follow-ups, Sonny could gather context and prepare an email or ticket. **He didn't send customer emails on his own.** I reviewed the wording, facts, recipients, and next steps before anything went out.
 
@@ -22,7 +22,7 @@ That same principle applied to the consultant copilot: it could recommend an app
 
 ## 02 / What happened when something was missing?
 
-![Four examples of Sonny's guardrails in practice](assets/02-guardrails-in-practice.png)
+![Four examples of Sonny's guardrails in practice](https://github.com/tctiffanycline-13/SonnyAI-Portfolio/blob/main/assets/14-guardrails-in-practice.png)
 
 These are **fictional reconstructions** of the kinds of situations I designed for, not screenshots or transcripts from production.
 
