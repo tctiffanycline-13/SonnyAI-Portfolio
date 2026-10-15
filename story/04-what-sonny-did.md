@@ -1,90 +1,124 @@
-<sub><a href="../README.md">Sonny</a> › Chapter 4 of 9</sub>
+<sub><a href="../README.md">Sonny</a> / Chapter 04 of 08</sub>
 
-# 🛠️ What Sonny Did
+# What Sonny Did 🛠️
 
-### Every piece, in plain English, with the rules it followed.
+### The actual workflows, without the technical jargon.
 
----
+Sonny started as a way to make my own workday easier. Once those workflows proved useful, I started building a copilot that could help other implementation consultants find answers and make better decisions.
 
-A plain-English tour of each piece: what it did, what it looked at, and the rules it followed. The original instructions and knowledge files stay private. Want to see outputs? Check the [examples](05-see-it-in-action.md).
-
-**What it ran on:** Claude, connected to the tools we already used: Gmail, Slack, Google Docs and Sheets, Zoom's meeting summaries, a browser, and our time-tracking system. Some pieces ran on a schedule; the copilot was there whenever someone asked.
+This chapter covers **what I built and used**, then **what I built and piloted**. The bigger, unbuilt implementation vision lives in [Chapter 8](08-whats-next.md).
 
 ---
 
-## For me and my team
+## 01 / The personal assistant
 
-### Meeting recap + support ticket · every morning
-- **What it did:** turned each new meeting summary into a recap email for the customer, plus a support ticket for anything broken
-- **What it looked at:** new meeting summaries, our customer directory, and each customer's open tickets
-- **The rules:** drafts only, addressed to me · never mark my email as read or edit the directory · write `[pending]` instead of guessing · every ticket includes who, what's wrong, what we need and how urgent, and who's affected · don't duplicate an open ticket
-- **A fun workaround:** the email connection only showed a preview of each message, so Sonny opened the full email in a browser instead of working from half the story
-- **Result:** 30–60 minutes down to under 5 per call, and complete tickets every time
-- **See it:** [example](05-see-it-in-action.md#meeting-recap--support-ticket)
+![Five personal Sonny workflows](assets/01-personal-workflows.png)
 
-### Monday digest · via Slack
-- **What it did:** recapped last week's meetings, called out wins, and listed what still needed me
-- **What it looked at:** meeting summaries, Slack, and my email (including what I'd sent)
-- **The rules:** something only counts as "still open" if there's no sign I handled it in Slack, email, a calendar invite, or another meeting · urgent means customer escalations or someone who's followed up twice · ignore newsletters and automatic notifications
-- **See it:** [example](05-see-it-in-action.md#monday-digest)
+I used **Claude** with tools we already worked in: Gmail, Slack, Google Docs and Sheets, Zoom meeting summaries, a browser, and our time-tracking system. Some workflows ran on a schedule; others were one-off requests.
 
-### Team meeting agenda · Tuesdays
-- **What it did:** drafted company updates, an ice breaker, a lunch-and-learn idea, and the top three issues from our team tracker
-- **The rules:** only include an update you can point back to a real email or message · if a section's empty, say so instead of filling space · keep it readable in two minutes
+### The one I used most: meeting follow-ups
 
-### New consultant status report · Fridays
-- **What it did:** a weekly update for my manager on how each new consultant was ramping
-- **What it looked at:** time tracking and each person's Slack activity
-- **The rules:** clear definitions for green, yellow and red · new hires start green · onboarding progress stays something I fill in myself, because I knew things the data didn't
+**The problem:** After a customer call, I still had to turn my notes into a recap and, if something was broken, a support ticket.
 
-### Back-from-vacation catch-up · one time
-- **What it did:** the night before I got back, it checked everything that was open when I left, dropped what was done, and sorted the rest by urgency
+**Sonny's job:** Use the meeting summary, customer directory, and open tickets to prepare drafts for me to review.
+
+**The result:** My observed prep time went from **30–60 minutes to under five minutes**. That's from my own use, not a controlled team-wide measurement.
+
+<details>
+<summary><b>See the workflow rules (and a workaround I'm still proud of)</b></summary>
+
+- Drafts were addressed to me, not sent to customers.
+- Never mark emails as read or change the customer directory.
+- Use `[pending]` for missing details rather than guessing.
+- Tickets needed the customer, problem, requested action and urgency, and affected users.
+- Check existing open tickets to avoid duplicates.
+
+**The workaround:** The email connection only returned a preview of some messages. Rather than working from incomplete context, Sonny opened the full message in a browser. Not glamorous, but it mattered.
+
+[See an example recap and ticket →](05-see-it-in-action.md#meeting-recap--support-ticket)
+</details>
+
+### The other four workflows
+
+| Workflow | What Sonny prepared | What kept it useful |
+|---|---|---|
+| **Monday digest** | Wins, meeting highlights, and open items in Slack | Checked sent email and other updates before calling something overdue |
+| **Tuesday agenda** | Team updates, an icebreaker, a learning topic, and top tracker issues | Included only updates grounded in actual messages; readable in two minutes |
+| **Friday ramp report** | Status updates for new consultants | Used defined green/yellow/red rules; I filled in context the data couldn't capture |
+| **Vacation catch-up** | A prioritized list of what still needed attention | Removed anything resolved while I was away |
+
+<details>
+<summary><b>More on the Monday digest</b></summary>
+
+Sonny looked across meeting summaries, Slack, and my email — including messages I'd sent. An item counted as open only if there was no sign I'd already handled it. Customer escalations and repeated follow-ups took priority; newsletters and automatic notifications didn't.
+
+[See an example digest →](05-see-it-in-action.md#monday-digest)
+</details>
 
 ---
 
-## The copilot
+## 02 / The consultant copilot
 
-**What it did:** helped any consultant prep, scope, troubleshoot, launch and hand off a project the same way an experienced teammate would.
+My personal workflows were useful, but I kept seeing a bigger problem: **the team needed easier access to the knowledge experienced consultants had built up over years.**
 
-**How it was organized:**
+I built and began piloting a knowledge copilot that consultants could ask for help with preparation, scoping, troubleshooting, and launch decisions.
 
-```mermaid
-flowchart TB
-    Q[A consultant's question] --> R{Sonny}
-    R --> M["How we work<br/><i>travels to any product</i>"]
-    R --> P["How the product works<br/><i>swap it out</i>"]
-    M --- M1[Implementation playbook]
-    M --- M2[Scoping and discovery]
-    M --- M3[Troubleshooting]
-    M --- M4[Training and readiness]
-    P --- P1[Product 1]
-    P --- P2[Product 2]
-    P --- P3[Glossary]
-```
+![Two types of knowledge behind Sonny](assets/02-copilot-knowledge.png)
 
-**Eight things you could ask it for:**
+I organized its knowledge into **seven files**: four about how we work, and three about how the products work. That separation was deliberate. Our implementation methodology should be reusable even as products, packaging, and features change.
 
-| Ask for… | You'd get |
+### Eight ways a consultant could use Sonny
+
+| Ask Sonny for… | Get back… |
 |---|---|
-| **Call prep** | The goal, who's attending and what they care about, an agenda, questions to ask, what to demo, and a backup plan |
-| **Contract review** | What the contract actually says, what's unclear, and what might turn into extra scope ([example](05-see-it-in-action.md#contract-review)) |
-| **A project plan** | Milestones, owners and what "done" looks like |
+| **Call prep** | Customer goals, stakeholders, agenda, questions, demo ideas, and a backup plan |
+| **Contract review** | What was agreed, what was unclear, and possible scope concerns |
+| **Project planning** | Suggested milestones, owners, and definitions of done |
 | **Product coaching** | A feature explained in customer-friendly language |
-| **Troubleshooting** | A step-by-step way to find the problem, from "who's affected?" to "what does Support need?" |
-| **Launch readiness** | Green, yellow or red, with the reasons |
-| **Customer emails** | Recaps, action lists, risk notes or handoffs |
-| **Practice** | Role-play a customer, a quiz, or feedback on a practice call |
+| **Troubleshooting** | A structured investigation and the details Support would need |
+| **Launch readiness** | A green/yellow/red assessment with reasons |
+| **Customer communication** | Draft recaps, action lists, risk notes, and handoffs |
+| **Practice** | Customer role-play, quizzes, and practice-call feedback |
 
-**The rules it followed:**
-1. Start with why the customer bought, not a feature tour.
-2. Explain what to set up, why, how to test it, and what can go wrong.
-3. Launch the simplest version first.
-4. Have the customer do it during training, not just watch.
-5. Be clear about what's documented versus what's just good practice.
-6. Never make up what a product can do, what it costs, or what a customer bought.
-7. Call out anything outside the contract.
-8. Set things up with reporting and adoption in mind from day one.
+[See examples of Sonny's outputs →](05-see-it-in-action.md)
+
+<details>
+<summary><b>What Sonny was taught about a good implementation</b></summary>
+
+1. Start with why the customer bought the product, not a feature tour.
+2. Explain what to configure, why it matters, how to test it, and what can go wrong.
+3. Launch the simplest useful version first.
+4. Have customers practice during training rather than just watch.
+5. Distinguish documented product behavior from recommended practice.
+6. Never invent product functionality, pricing, or contracted scope.
+7. Flag requests that fall outside the agreement.
+8. Consider reporting and adoption from the beginning.
+
+</details>
 
 ---
 
-<p align="center"><a href="03-how-sonny-grew.md">← 🌱 How Sonny Grew</a> &nbsp;·&nbsp; <a href="05-see-it-in-action.md">👀 See It in Action →</a></p>
+## 03 / What Sonny didn't do
+
+Sonny wasn't a replacement for a consultant. It **prepared work and surfaced information**; people still made the calls.
+
+- **No autonomous customer emails.** I reviewed drafts before sending.
+- **No invented details.** Missing information stayed visible.
+- **No unapproved scope promises.** Anything outside the contract was flagged.
+- **No pretending every signal was in the data.** Some onboarding judgments stayed manual.
+
+And I didn't collect enough data from the team pilot to claim company-wide time savings or adoption results.
+
+That's an important distinction: **the personal workflows were built and used; the team copilot was built and piloted; the end-to-end implementation platform was a future concept.**
+
+---
+
+## What I'd improve next
+
+I'd standardize access to shared knowledge, give each knowledge source a clear owner, and measure output quality and consultant adoption during a longer pilot.
+
+Because a good assistant isn't just one that gives an answer quickly. It's one people can rely on — and know when to question.
+
+---
+
+<p align="center"><a href="03-how-sonny-grew.md">← How Sonny Grew</a> &nbsp;·&nbsp; <a href="../README.md">Back to Sonny</a> &nbsp;·&nbsp; <a href="05-see-it-in-action.md">See It in Action →</a></p>
