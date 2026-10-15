@@ -16,7 +16,7 @@ I kept thinking: **surely there's a better way to do this.**
 
 I started with meeting recaps and support tickets—things I could test in my own workflow. Sonny helped turn meeting notes into structured drafts, surface action items, and flag missing details. I reviewed everything before sending or submitting it.
 
-![Before Sonny versus with Sonny](assets/01-before-after.png)
+![Before Sonny versus with Sonny](https://github.com/tctiffanycline-13/SonnyAI-Portfolio/blob/main/assets/01-before-after.png)
 
 That improvement was something I observed in my own day-to-day work, **not** a formal team-wide study. I also noticed fewer follow-up questions about missing ticket information, although I didn't measure that separately.
 
@@ -28,7 +28,7 @@ Once Sonny was useful to me, I started thinking about the questions our consulta
 
 I expanded the idea into a knowledge copilot and began piloting it with consultants. That introduced a new set of questions: Who maintains the knowledge? How do you keep guidance consistent? And how does someone learn to trust a tool they didn't build themselves?
 
-![Sonny's three stages: built, piloted, envisioned](assets/02-evolution.png)
+![Sonny's three stages: built, piloted, envisioned](https://github.com/tctiffanycline-13/SonnyAI-Portfolio/blob/main/assets/02-evolution.png)
 
 **The distinction matters:** I used the personal workflows, started a team pilot, and designed the broader implementation experience. I didn't deploy that final vision.
 
@@ -38,7 +38,7 @@ An implementation can look fine on paper and still be headed for trouble. A sign
 
 That made me wonder whether Sonny could help consultants identify gaps **before** generating a project plan.
 
-![Conceptual readiness workflow: review, flag, plan](assets/03-readiness.png)
+![Conceptual readiness workflow: review, flag, plan](https://github.com/tctiffanycline-13/SonnyAI-Portfolio/blob/main/assets/03-readiness.png)
 
 I imagined a workflow that reviewed the SOW and handoff, flagged missing information or conflicting assumptions, and gave a consultant the chance to resolve them. Only then would it help prepare a plan, provisioning steps, and personalized onboarding resources.
 
