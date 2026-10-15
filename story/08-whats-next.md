@@ -1,66 +1,49 @@
-<sub><a href="../README.md">Sonny</a> › Chapter 8 of 9</sub>
+<sub>[Sonny](../README.md) / Chapter 08 of 08</sub>
 
-# 🚀 What's Next: The Kickoff Check
+# What's Next 🧡
 
-### The first thing I'd build if I picked Sonny back up.
+### Sonny started as a way to get my own time back. The opportunity I see now is helping implementation teams start customer projects with fewer surprises.
 
----
+I built Sonny around problems I knew firsthand: turning messy notes into useful follow-ups, writing clearer support tickets, and finding answers without digging through scattered documentation. I used the personal workflows myself and explored a consultant copilot with the team.
 
-*An idea, not built.*
+The bigger idea — an AI-assisted implementation preparation experience — **was a roadmap, not a shipped product**. If I were picking this project back up today, here's how I'd approach it.
 
-## The problem
+## 01 / Build the next version in stages
 
-Before every kickoff, a consultant has to answer one question:
+![Three-stage proposed roadmap for Sonny](assets/01-next-steps-roadmap.png)
 
-> **Do I understand this customer and their goals well enough to lead this kickoff with confidence?**
+**First, validate the consultant copilot.** I'd test it on actual questions consultants ask, not just prompts designed for a good demo. Can it find the right playbook? Does it distinguish a standard implementation practice from a product-specific fact? How often does a consultant have to correct the answer?
 
-Right now they answer it by reading the contract, the sales handoff and the customer's questionnaire one at a time and connecting the dots in their head. When everyone's busy, that's the step that gets skipped. Then the contradictions show up weeks later as delays, scope fights, or a launch date nobody can hit.
+**Then, tackle the handoff.** I'd give Sonny the signed statement of work and the sales-to-services handoff, and ask it to surface contradictions, missing decisions, and dependencies — with evidence attached. The consultant would confirm the findings before anything moved forward.
 
-Our scoping spreadsheet couldn't help. It told you how many **hours** a project needed. Nothing told you how **risky** it was.
+**Only after that, help prepare the launch.** Once the inputs are reliable, Sonny could draft a project plan, identify provisioning needs, and assemble relevant onboarding resources. These would remain recommendations for a human to approve, not automatic actions.
 
-## What experienced consultants already know
+## 02 / The first pilot I'd run
 
-It's almost never one thing. It's the combination.
+I'd start small: a handful of implementation consultants, a limited set of common use cases, and a clear baseline for how the work gets done today.
 
-- **Sold on features, not outcomes.** A super detailed list of what's included, but no clear answer to "what does success look like?" That project will drift, because nobody can say when it's done.
-- **Too many warning signs at once.** No clear owner, plus a fuzzy goal, plus a tight deadline that depends on the customer's IT team. Any one is fine. All of them together means: stop planning and start asking questions.
+![Proposed pilot scorecard with four measurement areas](assets/02-pilot-scorecard.png)
 
-## The idea
+The important distinction is **quality before scale**. A response that saves five minutes but invents a product capability isn't a win. Neither is a beautifully formatted risk report that takes longer to verify than doing the work manually.
 
-Hand Sonny the contract and the sales handoff. Before it builds anything, it tells the consultant what's missing, what doesn't add up, and where the risk is, with the evidence for each. The consultant agrees or disagrees, and only then does Sonny help build the kickoff.
+I'd look at answer accuracy, time to a usable draft, how much editing consultants do, and whether they keep coming back. For the handoff concept, I'd also track whether Sonny catches meaningful risks early enough to change a decision.
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│ Northwind Logistics · Kickoff in 6 days                     │
-│ ⚠ Check before you plan: 3 warning signs together          │
-├─────────────────────────────────────────────────────────────┤
-│ GOALS           🔴  No measurable success criteria          │
-│ OWNERSHIP       🔴  Contract vs. handoff: who has time?     │
-│ TIMELINE        🟡  90 days; login setup depends on their IT│
-│ TECHNICAL       🟡  Login + CRM + AI search all at once     │
-│ SCOPE           🟢  What's excluded is clear                │
-└─────────────────────────────────────────────────────────────┘
-```
+*These are proposed evaluation measures. I don't have validated team-wide adoption or impact results to report.*
 
-## Why check first?
+## 03 / What I'd be careful not to automate
 
-Turning a contract into a project plan is easy, and anyone can build that. Noticing the contract quietly doesn't work is the hard part, and the valuable one. A plan built on a contradiction just gets you to the wrong place faster.
+There are decisions I wouldn't hand to Sonny: approving changes to scope, promising timelines to customers, sending unreviewed communications, or provisioning an environment based on ambiguous requirements.
 
-## The order I'd build things in
+I want AI to make the consultant **better informed and better prepared**, not quietly turn uncertainty into a commitment.
 
-1. **The kickoff check.** It comes first in every project and works for any product.
-2. **A kickoff kit.** The plan, agenda and questions, built from what the consultant agreed with.
-3. **[A room for every customer](09-customer-rooms.md).** The customer's side of the project, in one place.
-4. **Site setup.** The most product-specific piece, so it goes last.
+## 04 / What this project taught me
 
-## How I'd know it's working
+Sonny changed how I think about building products. I began with a workflow I personally understood, watched where the friction actually disappeared, and then started asking bigger questions about the customer journey.
 
-Four questions, in this order: **Is it right?** Is it complete? Do people actually use it? And did projects get better? The real test is simple: did the risks it flagged at kickoff actually show up later?
+The most interesting part wasn't getting an AI model to produce an answer. It was deciding **which answer was useful, what evidence it needed, and who should make the final call**.
+
+That's the kind of work I want to keep doing: close to customers and teams, finding the small operational problems that point to bigger product opportunities.
 
 ---
 
-*I have the full spec for this, including requirements, success metrics, the rollout plan and how I'd test it. Happy to walk you through it.* **[Let's talk →](https://www.linkedin.com/in/tiffany-cline/)**
-
----
-
-<p align="center"><a href="07-decisions-along-the-way.md">← 🧭 Decisions Along the Way</a> &nbsp;·&nbsp; <a href="09-customer-rooms.md">🏠 The Big Idea: A Room for Every Customer →</a></p>
+<p align="center"><a href="07-decisions-along-the-way.md">← Decisions Along the Way</a> &nbsp;·&nbsp; <a href="../README.md">Back to Sonny</a></p>
