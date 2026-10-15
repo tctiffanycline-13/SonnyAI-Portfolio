@@ -30,27 +30,27 @@ And some issues were more expensive than admin time. A missing detail in a suppo
 
 ### The implementation consultant
 
-**Their day:** Customer calls, project follow-ups, troubleshooting, and the occasional “quick ask” that isn't quick at all.
+- **Their day:** Customer calls, project follow-ups, troubleshooting, and the occasional “quick ask” that isn't quick at all.
 
-**What they needed:** Less time documenting work and more confidence that nothing had been missed. They also needed help recognizing when a request went beyond the agreed scope.
+- **What they needed:** Less time documenting work and more confidence that nothing had been missed. They also needed help recognizing when a request went beyond the agreed scope.
 
-**Where Sonny fit:** Drafting recaps, support tickets, and action items; later, helping with call preparation and contract review through the team copilot pilot.
+- **Where Sonny fit:** Drafting recaps, support tickets, and action items; later, helping with call preparation and contract review through the team copilot pilot.
 
 ### The team leader (me)
 
-**My day:** Leading a global team while trying to figure out what actually needed my attention.
+- **My day:** Leading a global team while trying to figure out what actually needed my attention.
 
-**What I needed:** A reliable view of unresolved work without reading every email, chat thread, and status update.
+- **What I needed:** A reliable view of unresolved work without reading every email, chat thread, and status update.
 
-**Where Sonny fit:** Monday digests, meeting agendas, onboarding status drafts, and catching up after time away.
+- **Where Sonny fit:** Monday digests, meeting agendas, onboarding status drafts, and catching up after time away.
 
 ### The new consultant
 
-**Their day:** Learning the product *and* learning how to manage real customer situations — sometimes with the experienced people in another time zone.
+- **Their day:** Learning the product *and* learning how to manage real customer situations — sometimes with the experienced people in another time zone.
 
-**What they needed:** Guidance that went beyond where to click. What should I ask before kickoff? When should I push back? What makes a launch risky?
+- **What they needed:** Guidance that went beyond where to click. What should I ask before kickoff? When should I push back? What makes a launch risky?
 
-**Where Sonny fit:** The team knowledge copilot pilot, including product coaching, call preparation, and practice scenarios.
+- **Where Sonny fit:** The team knowledge copilot pilot, including product coaching, call preparation, and practice scenarios.
 
 ---
 
