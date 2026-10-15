@@ -10,7 +10,7 @@ The bigger idea — an AI-assisted implementation preparation experience — **w
 
 ## 01 / Build the next version in stages
 
-![Three-stage proposed roadmap for Sonny](assets/01-next-steps-roadmap.png)
+![Three-stage proposed roadmap for Sonny](https://github.com/tctiffanycline-13/SonnyAI-Portfolio/blob/main/assets/17-next-steps-roadmap.png)
 
 **First, validate the consultant copilot.** I'd test it on actual questions consultants ask, not just prompts designed for a good demo. Can it find the right playbook? Does it distinguish a standard implementation practice from a product-specific fact? How often does a consultant have to correct the answer?
 
@@ -22,7 +22,8 @@ The bigger idea — an AI-assisted implementation preparation experience — **w
 
 I'd start small: a handful of implementation consultants, a limited set of common use cases, and a clear baseline for how the work gets done today.
 
-![Proposed pilot scorecard with four measurement areas](assets/02-pilot-scorecard.png)
+![Proposed pilot scorecard with four measurement areas](https://github.com/tctiffanycline-13/SonnyAI-Portfolio/blob/main/assets/18-pilot-scorecard.png
+)
 
 The important distinction is **quality before scale**. A response that saves five minutes but invents a product capability isn't a win. Neither is a beautifully formatted risk report that takes longer to verify than doing the work manually.
 
