@@ -1,122 +1,72 @@
-<sub><a href="../README.md">Sonny</a> › Chapter 6 of 9</sub>
+<sub><a href="../README.md">Sonny</a> / Chapter 06 of 08</sub>
 
-# 🛡️ Keeping AI in Check
+# Keeping AI in Check 🛡️
 
-### How I made sure Sonny helped more than it hurt.
+### I wanted Sonny to save time — not create a new problem for someone else to clean up.
+
+The more I used Sonny, the clearer one thing became: **a confident answer isn't necessarily a correct one.** That's especially risky in implementations, where a made-up date, product claim, or scope commitment can turn into a real customer expectation.
+
+So I built rules around the work Sonny was allowed to *prepare* and the decisions that still belonged to a person.
 
 ---
 
-Sonny read customer emails, team chats and contracts, and it wrote things customers and coworkers would act on. So the question I kept asking wasn't "can AI do this?" It was: **if it gets this wrong, what happens, and who catches it?**
+## 01 / Draft first. Human approves.
+
+![Sonny's human approval flow](assets/01-human-approval-flow.png)
+
+For customer follow-ups, Sonny could gather context and prepare an email or ticket. **He didn't send customer emails on his own.** I reviewed the wording, facts, recipients, and next steps before anything went out.
+
+That same principle applied to the consultant copilot: it could recommend an approach, but not approve new scope or make a customer commitment.
 
 ---
 
-## How much Sonny was allowed to do on its own
+## 02 / What happened when something was missing?
 
-The further something got from me, the less Sonny could do without a person.
+![Four examples of Sonny's guardrails in practice](assets/02-guardrails-in-practice.png)
 
-| | Sonny could… | Examples |
+These are **fictional reconstructions** of the kinds of situations I designed for, not screenshots or transcripts from production.
+
+The rules were simple, but important:
+
+| If Sonny encountered… | I wanted it to… | Not… |
 |---|---|---|
-| **Our tools** | Look, but never change anything | Email, Slack, the customer directory, the team tracker |
-| **My own stuff** | Act on its own | A Monday message to me, my own to-do list |
-| **Anything for other people** | Draft it, but never send it | Customer recaps, support tickets, agendas, reports |
-| **Customer-facing places** | Nothing | Never built, on purpose |
-
-That last line is the most important decision in the whole project. Every draft was addressed to me, and Sonny never filled in a customer's email address.
-
----
-
-## The rules
-
-| Rule | What it looked like | What could go wrong without it |
-|---|---|---|
-| **Double-check before flagging** | Only call something "still open" if Slack, email, calendar and other meetings show no sign I'd handled it | Getting nagged about things I'd already done, which kills trust fast |
-| **Show your source** | No update unless it came from a real email or message | Updates that sound right but never happened |
-| **Don't guess** | Write `[pending]` when something's missing | A wrong customer ID going to Support |
-| **Look, don't touch** | Never mark email as read or edit our records | Sonny quietly messing with my inbox or the team's data |
-| **Don't double up** | Check for an open ticket before drafting a new one | Duplicate escalations |
-| **Say when there's nothing** | Empty sections say "nothing this week" | Filler pretending to be content |
-| **Report back** | Every scheduled run told me what it did, what was missing and what failed | Something breaking with nobody noticing |
-
-## The rules for the copilot
-
-The copilot followed the same rule I gave my team: **if you're not sure, confirm before you answer.**
-
-- Never make up what a product can do, what it costs, or what a customer bought.
-- Be clear when something might have changed or depends on the customer's setup.
-- Call out anything outside the contract instead of quietly agreeing to it.
-- Never share one customer's details with another.
+| **Missing information** | Mark it `[pending]` and ask for confirmation | Guess an owner, date, or decision |
+| **An existing support issue** | Check open tickets and flag a possible match | Create a duplicate by default |
+| **A request outside the SOW** | Flag the scope concern for a consultant | Promise extra work |
+| **An unsupported product question** | Distinguish documented behavior from a suggestion | Invent a feature or entitlement |
+| **A possibly resolved task** | Check sent email and recent updates | Call it overdue without context |
 
 ---
 
-## What I'd fix before rolling it out to everyone
+## 03 / Protect the source of truth
 
-I'm proud of what I built, but here's what I'd tighten up first:
+I separated the consultant copilot's knowledge into **how we implement** and **how the products work**. The first changes relatively slowly; the second can change with releases, packaging, and entitlements.
 
-| What could go wrong | Why it matters | What I'd do |
-|---|---|---|
-| **Someone sneaks instructions into an email** | Sonny reads emails from people outside the company. A cleverly written email could try to steer what Sonny drafts. | Drafts-only already limits the damage. I'd also treat everything in an email strictly as information, flag anything that looks like an instruction, and never let an email decide who gets a message. |
-| **People stop reading drafts** | A person "in the loop" who just clicks send isn't really checking. | Keep drafts short and consistent, track how often people edit them, and spot-check what goes out. |
-| **Knowledge goes out of date** | Product names and features change. | Give the knowledge files an owner and date the product details. |
-| **No way to measure quality** | I checked every output myself. That doesn't work for fifteen people. | [How I'd measure it](08-whats-next.md#how-id-know-its-working) |
-| **Customer information** | Customer conversations go through an AI tool. | Only use company-approved AI tools, and give Sonny only what it needs for each task. |
-| **It was set up just for me** | Everything pointed at my inbox and my channels. | Make those settings anyone can change. |
+That mattered because a good implementation practice isn't the same thing as a verified product capability. I wanted Sonny to be helpful without blurring that line.
 
----
+<details>
+<summary><b>What I'd check before trusting a response</b></summary>
 
-## How it was put together
+- **Source:** Is this supported by a meeting note, contract, ticket, or maintained knowledge file?
+- **Freshness:** Could the product or customer context have changed?
+- **Completeness:** Are important facts missing or conflicting?
+- **Authority:** Is Sonny drafting a recommendation, or accidentally making a decision only a person can make?
+- **Audience:** Would I be comfortable putting this in front of the customer after review?
 
-Short version: there was no app, no database and no custom code. Sonny was a set of Claude skills (written instructions) connected to the tools my team already used. Some ran on a schedule; the copilot answered questions whenever someone asked.
-
-That was on purpose. I wanted to find out whether Sonny's judgment was right before building anything bigger around it.
+</details>
 
 ---
 
-### The scheduled helpers
+## 04 / What I learned — and what I hadn't proven yet
 
-```mermaid
-flowchart LR
-    subgraph IN["Sonny reads (never edits)"]
-        Z[Meeting summaries]
-        G[Gmail]
-        S[Slack]
-        D[Customer directory]
-        T[Team tracker]
-        R[Time tracking]
-    end
+In my own workflows, the guardrails helped me produce drafts I could review quickly. The recap and ticket preparation process went from roughly **30–60 minutes to under five minutes** in my personal use. That's an observation, **not** a measured quality or safety study.
 
-    subgraph SK["Sonny"]
-        direction TB
-        K1[Gather] --> K2[Double-check]
-        K2 --> K3[Apply the rules]
-        K3 --> K4[Write the draft]
-    end
+I also built and began piloting the consultant copilot, but I **didn't complete a broad evaluation** of its accuracy, adoption, or failure rate. I wouldn't claim the rules eliminated hallucinations or that the tool was ready to act independently.
 
-    IN --> SK
+If I were expanding the pilot, I'd test it against real-world scenarios with known answers: ambiguous scope, outdated product guidance, missing owners, duplicate issues, and contradictory notes. I'd track **how often it gave a useful answer, how often a consultant corrected it, and whether anyone acted on a wrong one**.
 
-    SK --> O1["Email drafts<br/><i>I review and send</i>"]
-    SK --> O2["Messages to me<br/><i>my stuff only</i>"]
-    SK --> O3["A quick report<br/><i>what worked, what didn't</i>"]
-
-    classDef human fill:#fff8e1,stroke:#f9a825,color:#6d4c00
-    class O1 human
-```
-
-- Everything on the left is look-only. Sonny never changed a source.
-- Anything going to a customer or coworker landed as a draft. The yellow box is where a person decides.
-- The quick report is how I knew a job had run properly when I wasn't watching.
-
-### The copilot
-
-```mermaid
-flowchart LR
-    C[Consultant] -->|a question or a contract| RT[Sonny]
-    RT --> ML["How we work"]
-    RT --> PL["How the product works"]
-    RT -->|an answer, plus anything<br/>that needs confirming| C
-```
-
-No automation here, just a really well-prepared teammate. It gave consultants the playbook an experienced colleague would use, and said clearly when a product detail needed double-checking.
+Because my goal was never to take judgment away from the consultant. It was to give them a better starting point — and make uncertainty obvious before it reached a customer.
 
 ---
 
-<p align="center"><a href="05-see-it-in-action.md">← 👀 See It in Action</a> &nbsp;·&nbsp; <a href="07-decisions-along-the-way.md">🧭 Decisions Along the Way →</a></p>
+<p align="center"><a href="05-see-it-in-action.md">← See It in Action</a> &nbsp;·&nbsp; <a href="../README.md">Back to Sonny</a> &nbsp;·&nbsp; <a href="07-decisions-along-the-way.md">Decisions Along the Way →</a></p>
