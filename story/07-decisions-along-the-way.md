@@ -1,81 +1,56 @@
-<sub><a href="../README.md">Sonny</a> › Chapter 7 of 9</sub>
+<sub>[Sonny](../README.md) / Chapter 07 of 08</sub>
 
-# 🧭 Decisions Along the Way
+# Decisions Along the Way 🧡
 
-### The calls I made, and what I traded off.
+### Building Sonny taught me that the most important product decisions weren't about what AI *could* do. They were about what it *should* do first.
 
----
+I didn't start with a grand platform idea. I started with the repetitive work I understood best, learned where AI helped, and became more selective as the idea grew.
 
-The first six are calls I made while building Sonny. The last two are calls I'd make for what comes next. I don't rewrite old decisions. If I change my mind, I add a new one and explain why.
+## 01 / The tradeoffs
 
----
+![Five product decisions behind Sonny](assets/01-decision-log.png)
 
-## 1. Start with support tickets, not the biggest time sink
-*While building Sonny*
+A few decisions shaped the direction of the project:
 
-**The situation:** lots of things took up my time, but sloppy tickets were also keeping customers waiting.
-**What I considered:** automate whatever took the most time, fix the thing hurting other people first, or build a general assistant.
-**What I chose:** fix tickets first, with four details every ticket must have.
-**The trade-off:** smaller time savings at the start, but Support noticed right away, and that built trust fast.
-**How I checked:** I watched whether Support still came back with questions. They mostly stopped. I didn't measure it formally.
+**Start narrow, then earn the right to expand.** Meeting recaps and support tickets were familiar, frequent, and easy for me to review. In my own workflow, preparing them went from roughly 30–60 minutes to under five. That was enough to keep experimenting — not proof the same result would hold across a team.
 
-## 2. Sonny drafts, I send
-*While building Sonny*
+**Separate methodology from product facts.** Implementation practices change more slowly than feature availability, packaging, and configuration. I kept those knowledge sources distinct so an answer about *how to run a project* wouldn't accidentally become an unsupported claim about *what a product does*.
 
-**The situation:** Sonny reads customer emails and writes things customers will read.
-**What I considered:** let it send on its own, let it send when it's "confident," or keep it to drafts.
-**What I chose:** drafts only, for anything a customer or colleague sees. Sonny could only act on its own in places that were mine, like a Slack message to me.
-**The trade-off:** one extra click per email. In return, no emails to the wrong person and no claims I hadn't read.
-**The risk:** people stop reading drafts and just click send. Keeping drafts short and consistent makes them quick to check.
+**Make uncertainty visible.** I'd rather see `[pending: confirm owner]` than a plausible but invented name. Sonny prepared the work; a person still checked the facts and approved the next action.
 
-## 3. Double-check before flagging
-*While building Sonny*
+## 02 / The decision that changed my roadmap
 
-**The situation:** a digest that says "you owe someone a reply" when you don't would lose my trust in a week.
-**What I chose:** something only counts as still open if there's no sign I handled it in Slack, my sent email, a calendar invite, or another meeting.
-**The trade-off:** it might occasionally miss something real. I'd rather that than get nagged about things I'd already done.
+When I started imagining a more complete implementation experience, it was tempting to begin with the most impressive output: an AI-generated project plan.
 
-## 4. Leave a blank instead of guessing
-*While building Sonny*
+But a beautiful plan built on a bad handoff is still a bad plan.
 
-**The situation:** customer IDs and links are easy for AI to guess and painful when they're wrong.
-**What I chose:** missing details become `[pending]`, and Sonny tells me where to fix them.
-**The trade-off:** sometimes I fill in a blank by hand. A wrong customer ID never reaches Support.
+![Example showing why risk review comes before project planning](assets/02-risk-before-plan.png)
 
-## 5. Keep "how we work" separate from "how the product works"
-*While building Sonny*
+*Fictional example illustrating a proposed workflow, not a screenshot of a deployed feature.*
 
-**The situation:** product names and features change all the time. A good implementation method doesn't.
-**What I chose:** four files about our method, three about the products.
-**The trade-off:** more setup up front.
-**Why it matters:** this is what lets Sonny travel to other products and companies. It's the bet the next version is built on.
+I wanted the next version of Sonny to **read the SOW and handoff first**, identify contradictions or missing owners, and ask a consultant to resolve them. Only then would it make sense to draft milestones, provisioning requests, or personalized onboarding resources.
 
-## 6. Leave one thing manual on purpose
-*While building Sonny*
+That is also why I moved away from the idea of a simple **implementation readiness score**. A number might look neat on a dashboard, but it doesn't tell a consultant what to do on Monday morning. A list of blockers, evidence, owners, and next actions would be more useful.
 
-**The situation:** Sonny could have guessed each new hire's onboarding progress from their activity.
-**What I chose:** I kept filling that in myself.
-**Why:** the data didn't show it and I knew it. Automating it would have put a confident, wrong number in a report to leadership.
+## 03 / What I deliberately left for later
 
-## 7. No single readiness score, yet
-*For what comes next*
+| Tempting feature | Why I didn't prioritize it |
+|---|---|
+| Autonomous customer emails | An incorrect promise can damage trust; drafts were easier to verify. |
+| Automatic scope approval | Scope decisions need commercial and delivery ownership. |
+| One-click project provisioning | A mistake at setup can ripple across the implementation; validate the handoff first. |
+| A single readiness percentage | It hides the specific risks a consultant needs to resolve. |
 
-**The situation:** our scoping spreadsheet already estimates hours. What's missing is risk. One big "readiness score" would be easy to demo.
-**What I considered:** one number from 0 to 100, two separate numbers, or green/yellow/red for each area with the reasons shown.
-**What I chose:** green/yellow/red for each area, with the evidence. No overall number for now.
-**Why:** my own rule from the playbook: a status only means something if you can show the evidence behind it. One number also hides the dangerous combinations, like a vague goal *plus* an unclear owner *plus* a tight deadline.
-**The trade-off:** harder to compare projects at a glance, and a little less flashy.
-**What would change my mind:** once we can show the flags actually predict real problems, a score might earn its place.
+These were **roadmap decisions**, not claims that I'd built and tested all those capabilities. The larger implementation preparation platform remained a concept.
 
-## 8. Check first, build second
-*For what comes next*
+## 04 / What I'd validate next
 
-**The situation:** "upload a contract, get a project plan" is the obvious product, and easy for anyone to copy.
-**What I chose:** Sonny's first job is to point out what's missing, unclear or risky, and let the consultant agree or disagree. Plans and documents come after.
-**The trade-off:** a less flashy first impression.
-**The risk:** consultants might skip the check and just want the plan.
-**How I'd know:** how often consultants agree with the flags, and whether those flags change their kickoff.
+Before expanding a pilot, I'd want to answer three questions: **Does Sonny find the right issue? Does the consultant trust the evidence? Does it change what happens next?**
+
+I'd test a sample of real handoffs against consultant reviews, track false positives and missed risks, and see whether the output led to faster decisions without creating extra review work. I'd also measure adoption separately from time savings — because a tool can be impressive in a demo and still not fit someone's day.
+
+The lesson I took from Sonny: **good AI product thinking isn't about automating the maximum number of steps. It's about choosing the steps where better information actually improves the outcome.**
 
 ---
 
-<p align="center"><a href="06-keeping-ai-in-check.md">← 🛡️ Keeping AI in Check</a> &nbsp;·&nbsp; <a href="08-whats-next.md">🚀 What's Next: The Kickoff Check →</a></p>
+<p align="center"><a href="06-keeping-ai-in-check.md">← Keeping AI in Check</a> &nbsp;·&nbsp; <a href="../README.md">Back to Sonny</a> &nbsp;·&nbsp; <a href="08-whats-next.md">What's Next →</a></p>
