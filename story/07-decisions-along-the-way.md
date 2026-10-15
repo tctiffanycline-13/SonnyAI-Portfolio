@@ -8,15 +8,16 @@ I didn't start with a grand platform idea. I started with the repetitive work I 
 
 ## 01 / The tradeoffs
 
-![Five product decisions behind Sonny](assets/01-decision-log.png)
+![Five product decisions behind Sonny](https://github.com/tctiffanycline-13/SonnyAI-Portfolio/blob/main/assets/15-decision-log.png
+)
 
 A few decisions shaped the direction of the project:
 
-**Start narrow, then earn the right to expand.** Meeting recaps and support tickets were familiar, frequent, and easy for me to review. In my own workflow, preparing them went from roughly 30–60 minutes to under five. That was enough to keep experimenting — not proof the same result would hold across a team.
+- **Start narrow, then earn the right to expand.** Meeting recaps and support tickets were familiar, frequent, and easy for me to review. In my own workflow, preparing them went from roughly 30–60 minutes to under five. That was enough to keep experimenting — not proof the same result would hold across a team.
 
-**Separate methodology from product facts.** Implementation practices change more slowly than feature availability, packaging, and configuration. I kept those knowledge sources distinct so an answer about *how to run a project* wouldn't accidentally become an unsupported claim about *what a product does*.
+- **Separate methodology from product facts.** Implementation practices change more slowly than feature availability, packaging, and configuration. I kept those knowledge sources distinct so an answer about *how to run a project* wouldn't accidentally become an unsupported claim about *what a product does*.
 
-**Make uncertainty visible.** I'd rather see `[pending: confirm owner]` than a plausible but invented name. Sonny prepared the work; a person still checked the facts and approved the next action.
+- **Make uncertainty visible.** I'd rather see `[pending: confirm owner]` than a plausible but invented name. Sonny prepared the work; a person still checked the facts and approved the next action.
 
 ## 02 / The decision that changed my roadmap
 
@@ -24,7 +25,7 @@ When I started imagining a more complete implementation experience, it was tempt
 
 But a beautiful plan built on a bad handoff is still a bad plan.
 
-![Example showing why risk review comes before project planning](assets/02-risk-before-plan.png)
+![Example showing why risk review comes before project planning](https://github.com/tctiffanycline-13/SonnyAI-Portfolio/blob/main/assets/16-risk-before-plan.png)
 
 *Fictional example illustrating a proposed workflow, not a screenshot of a deployed feature.*
 
