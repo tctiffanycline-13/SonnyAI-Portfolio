@@ -1,59 +1,53 @@
 <sub>[← Back to Sonny](../README.md) · Chapter 01 of 08</sub>
 
-# It started with a support ticket.
+# 01 — The Full Story
 
-I built Sonny because I was tired of spending so much time on the admin *around* customer work. What started as a little experiment for myself became a team pilot—and eventually a much bigger product idea.
+*How a personal AI experiment turned into a bigger idea for implementation teams.*
 
-## The problem I kept seeing
+> **The short version:** I built Sonny to spend less time on administrative work. After seeing what he could do for me, I started exploring how he could help an entire implementation team.
 
-I was leading a growing Professional Services team, and our consultants were juggling customer calls, project updates, support issues, and scattered documentation. A lot of the work was important. A lot of the preparation was repetitive.
+## It started with a problem I knew well
 
-A support ticket is a good example. Writing one wasn't difficult, but pulling together the right context, checking what had already been reported, and making sure Support had what it needed took time. Incomplete tickets created another round of questions, and another delay for the customer.
+I was leading a global Professional Services team, and the work I loved most — helping customers and solving problems — was often followed by a mountain of admin.
 
-I kept thinking: **surely there's a better way to do this.**
+Meeting recaps. Support tickets. Action items. More meetings.
 
-## So I built Sonny
+So I built Sonny to help with the repetitive parts.
 
-I started with meeting recaps and support tickets—things I could test in my own workflow. Sonny helped turn meeting notes into structured drafts, surface action items, and flag missing details. I reviewed everything before sending or submitting it.
+| Before Sonny | With Sonny |
+|:---:|:---:|
+| **30–60 minutes** | **Under 5 minutes** |
+| Drafting recaps and tickets | Reviewing Sonny's first draft |
 
-![Before Sonny versus with Sonny](https://github.com/tctiffanycline-13/SonnyAI-Portfolio/blob/main/assets/01-before-after.png)
+*Based on my own workflow, not a formal time study.*
 
-That improvement was something I observed in my own day-to-day work, **not** a formal team-wide study. I also noticed fewer follow-up questions about missing ticket information, although I didn't measure that separately.
+![Before and after Sonny](https://github.com/tctiffanycline-13/SonnyAI-Portfolio/blob/main/assets/01-before-after.png)
 
-The rules were just as important as the time savings: don't invent customer details, don't create duplicate work, and don't make commitments on my behalf. If something was missing, Sonny needed to say so.
+## One idea became three
 
-## Then I thought about my team
+| Stage | What happened |
+|---|---|
+| **01 · My assistant** | Sonny helped me draft recaps, structure tickets, prepare for meetings, and organize follow-ups. |
+| **02 · Team copilot** | I developed an early knowledge copilot to help consultants find guidance and apply implementation processes. |
+| **03 · Bigger vision** | I proposed expanding Sonny to flag scope conflicts, missing information, and risks before kickoff. |
 
-Once Sonny was useful to me, I started thinking about the questions our consultants asked every day. The answer was often already in a playbook or internal document—but finding it wasn't always easy, especially across time zones.
+![How Sonny evolved](https://github.com/tctiffanycline-13/SonnyAI-Portfolio/blob/main/assets/02-evolution.png)
 
-I expanded the idea into a knowledge copilot and began piloting it with consultants. That introduced a new set of questions: Who maintains the knowledge? How do you keep guidance consistent? And how does someone learn to trust a tool they didn't build themselves?
+## What actually happened?
 
-![Sonny's three stages: built, piloted, envisioned](https://github.com/tctiffanycline-13/SonnyAI-Portfolio/blob/main/assets/02-evolution.png)
+| **Built & used** | **Piloted** | **Proposed** |
+|---|---|---|
+| Personal productivity workflows | Consultant knowledge copilot | Implementation readiness and preparation platform |
 
-**The distinction matters:** I used the personal workflows, started a team pilot, and designed the broader implementation experience. I didn't deploy that final vision.
+The time savings came from my personal use. I didn't collect validated team-wide results from the consultant pilot, and the larger platform remained a proposed direction.
 
-## The bigger idea
+## The lesson I took away
 
-An implementation can look fine on paper and still be headed for trouble. A signed SOW might assign content migration to the customer, while the sales handoff suggests the customer has no one available to do it. If nobody spots that contradiction before kickoff, the project starts with an avoidable risk.
+**The best AI doesn't need to make every decision.**
 
-That made me wonder whether Sonny could help consultants identify gaps **before** generating a project plan.
+Sonny was most useful when he handled repetitive work, organized information, and surfaced things worth a closer look — while leaving people responsible for the final call.
 
-![Conceptual readiness workflow: review, flag, plan](https://github.com/tctiffanycline-13/SonnyAI-Portfolio/blob/main/assets/03-readiness.png)
-
-I imagined a workflow that reviewed the SOW and handoff, flagged missing information or conflicting assumptions, and gave a consultant the chance to resolve them. Only then would it help prepare a plan, provisioning steps, and personalized onboarding resources.
-
-The full experience remained a concept. The part I'd build first is the **readiness check**, because it offers a focused problem I could test with real implementation scenarios and approved data.
-
-## What I learned
-
-Sonny taught me that building something useful isn't the same as automating everything. The most valuable decisions were often about what *not* to automate.
-
-I'd start small again. I'd keep human review for customer-facing work. But I'd measure adoption and output quality earlier, and think about shared knowledge ownership before expanding a personal tool to a team.
-
-What I'm proudest of isn't that Sonny helped me write tickets faster. It's that a very ordinary frustration pushed me to think differently about how enterprise implementations could work.
+What started as a way to get through my own to-do list became a much bigger lesson in how I'd approach building useful AI tools.
 
 ---
-
-*Personal portfolio case study. Customer details are anonymized. Observed results, pilots, and future concepts are distinguished throughout.*
-
 [← Back to Sonny](../README.md) · [Next: The Problems →](02-the-problems.md)
