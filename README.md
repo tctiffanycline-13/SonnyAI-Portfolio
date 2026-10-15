@@ -1,78 +1,72 @@
-<p align="center">
-  <img src="assets/sonny.png" alt="Sonny, waving hello" width="200">
-</p>
+ <div align="center">
+
+<img src="assets/sonny.png" alt="Sonny waving hello" width="240">
 
 # Meet Sonny! 👋
 
-### A little project that turned into a much bigger idea.
+### I built myself a little helper. Then I realized my team could use one, too.
 
-Sonny started as my personal assistant for the admin work I didn't love, and grew into a copilot for my whole implementation team. Built by [Tiffany Donnelly](https://github.com/tctiffanycline-13).
+An AI copilot I created to take some of the repetitive work out of enterprise implementations.
 
-**[Read the full story →](story/01-the-full-story.md)**
-
----
-
-## 🤔 Why I Built Sonny
-
-After years in Customer Success and Professional Services, I was tired of watching great people lose hours to meeting notes, support tickets, and hunting for information across five different tools.
-
-None of that is why customers buy software. It's just the stuff that gets in the way.
-
-**I wanted to fix that. So I built Sonny.**
+</div>
 
 ---
 
-## 🔄 Before & After
+## 👋 How it started
 
-| | The old way | With Sonny |
-|---|---|---|
-| **After every customer call** | 30–60 minutes writing the recap and support ticket | A draft waiting in under 5 minutes. I review and hit send. |
-| **Support tickets** | Missing details, so Support comes back with questions | The same four details every time, so Support can just get going |
-| **Monday morning** | Digging through Slack, email and meeting notes to see what's still open | One list, already double-checked |
-| **Team meeting prep** | Pulling updates from emails and a tracker | A draft agenda ready Tuesday morning |
-| **"How do I handle this?"** | Ask me, or wait for someone in another time zone | Ask Sonny, which knows our playbook |
-| **Prepping a new customer** | Read four documents and connect the dots yourself | Sonny flags what's missing or doesn't add up *(designed, not built)* |
+After years in Customer Success and Professional Services, I was pretty familiar with the little things that eat up an implementation consultant's day.
 
----
+Meeting recaps. Support tickets. Chasing down action items. Searching for answers that *definitely* existed somewhere.
 
-## 🌱 How It Grew
+I kept thinking there had to be a better way.
 
-- **Step 1: My assistant.** Meeting recaps, support tickets and weekly summaries. ✅ *Used every day.*
-- **Step 2: My team's copilot.** Our implementation playbook, on call for every consultant. 🛠️ *Built and piloted.*
-- **Step 3: The bigger idea.** Read a new customer's contract, spot the risks, set up their site, and build them a personalized resource room. 📐 *Designed, not built.*
+So I built Sonny.
 
-Some of it I built. Some of it I piloted. Some of it is still a very exciting roadmap.
+What started as a personal productivity experiment became a team knowledge copilot and eventually sparked a much bigger idea for how AI could improve the entire customer implementation experience.
+
+And yes, I gave him a name and a face. Obviously.
 
 ---
 
-## 📈 What Actually Happened
+## ⏱️ The difference
 
-- **30–60 minutes → under 5** for every recap and support ticket.
-- **Way less back-and-forth with Support**, because every ticket finally had what they needed.
-- **~4+ hours back per consultant, every week**, if the whole team had used it. *(That one's an estimate. I started rolling Sonny out right before I left, so I never got to measure it.)*
+| Before Sonny | With Sonny |
+|---|---|
+| 30–60 minutes preparing recaps and support tickets | Under 5 minutes in my own workflow |
+| Repeated back-and-forth on missing ticket details | More consistent, structured drafts |
+| Searching across scattered resources | A team knowledge copilot to help find answers |
 
----
-
-## 🛡️ My One Big Rule
-
-**Sonny drafts. A person decides.**
-
-It never sent anything to a customer, never guessed at missing details, and always double-checked before telling me I'd dropped the ball. I didn't want an AI confidently giving someone the wrong answer.
-
-**[Here's how that worked →](story/06-keeping-ai-in-check.md)**
+*Results reflect personal observations and an initial team pilot, not a measured organization-wide rollout.*
 
 ---
 
-## 🔍 Want to Dig Deeper?
+## 📖 Explore the story
 
-- 📖 **[The full story](story/01-the-full-story.md)**, from support tickets to the bigger idea
-- 🧭 **[Decisions along the way](story/07-decisions-along-the-way.md)**, and what I'd do differently
-- 🚀 **[What I'd build next](story/08-whats-next.md)**, starting with a kickoff check
-- 👀 **[Example outputs](story/05-see-it-in-action.md)**, with a made-up customer
-- 📚 **[Every chapter, in order](story/)**, if you want the whole thing
+I documented the project in eight chapters, from the original problem to the product decisions and what I'd build next.
+
+| Chapter | What's inside |
+|---|---|
+| [01 · The full story](story/01-the-full-story.md) | How one annoying workflow turned into a much bigger idea |
+| [02 · The problems](story/02-the-problems.md) | The friction I kept seeing across implementation teams |
+| [03 · How Sonny grew](story/03-how-sonny-grew.md) | What I built, what I piloted, and what I envisioned |
+| [04 · What Sonny did](story/04-what-sonny-did.md) | The workflows and capabilities behind the assistant |
+| [05 · See it in action](story/05-see-it-in-action.md) | Realistic examples of Sonny's outputs |
+| [06 · Keeping AI in check](story/06-keeping-ai-in-check.md) | Why human review was always part of the process |
+| [07 · Decisions along the way](story/07-decisions-along-the-way.md) | The product decisions, trade-offs, and lessons learned |
+| [08 · What's next](story/08-whats-next.md) | Where I'd take Sonny if I kept building |
+
+---
+
+## 👩‍💻 A little about me
+
+I'm Tiffany. I've spent 6+ years in enterprise SaaS across Customer Success, onboarding, and Professional Services leadership.
+
+I love solving messy problems, building things that make people's jobs easier, and finding better ways to deliver value to customers.
+
+Sonny gave me the chance to approach those problems from a product perspective. And I had a lot of fun with it.
+
+[My GitHub](https://github.com/tctiffanycline-13)
 
 ---
 
 *Thanks for stopping by! Sonny says hi. 👋*
-
-<sub>Company, customer and product names have been removed, and the examples are fictional.</sub>
