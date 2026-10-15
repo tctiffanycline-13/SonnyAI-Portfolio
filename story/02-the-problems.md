@@ -10,7 +10,8 @@ These weren't findings from a formal user research study. They came from the wor
 
 ## 01 / The problems kept showing up in different places
 
-![Five recurring problems across implementation work](assets/01-friction-points.png)
+![Five recurring problems across implementation work](https://github.com/tctiffanycline-13/SonnyAI-Portfolio/blob/main/assets/04-friction-points.png
+)
 
 The frustrating thing? Most of these weren't new problems. We'd found ways to work around them.
 
@@ -24,7 +25,8 @@ And some issues were more expensive than admin time. A missing detail in a suppo
 
 ## 02 / Same problems, different people
 
-![Three Sonny user perspectives: consultant, team leader and new hire](assets/02-people.png)
+![Three Sonny user perspectives: consultant, team leader and new hire](https://github.com/tctiffanycline-13/SonnyAI-Portfolio/blob/main/assets/05-people.png
+)
 
 ### The implementation consultant
 
@@ -79,7 +81,5 @@ I started with the problems I could see and test, then used what I learned to sh
 **That's the thread through this whole project:** make the work easier without taking away the judgment that makes a good consultant valuable.
 
 ---
-
-<sub>These are experience-based user perspectives, not quotes from formal research participants. Examples have been generalized to avoid sharing customer or company information.</sub>
 
 <p align="center"><a href="01-the-full-story.md">← The Full Story</a> &nbsp;·&nbsp; <a href="../README.md">Back to Sonny</a> &nbsp;·&nbsp; <a href="03-how-sonny-grew.md">How Sonny Grew →</a></p>
