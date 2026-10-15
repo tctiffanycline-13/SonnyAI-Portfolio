@@ -1,78 +1,96 @@
-<sub><a href="../README.md">Sonny</a> › Chapter 3 of 9</sub>
+<sub>[Sonny](../README.md) / Chapter 03 of 08</sub>
 
 # 🌱 How Sonny Grew
 
-### What I built, what I piloted, and what stayed on the roadmap.
+### It started with my own to-do list. It didn't stay there.
+
+I built Sonny while leading Professional Services in 2025–2026. At first, I just wanted to spend less time on admin. Then I started wondering what would happen if my team had access to the same kind of help.
+
+The important distinction: **some of Sonny was built and used, some reached an early pilot, and the bigger implementation experience remained a concept.**
+
+![Sonny's five-stage evolution](assets/01-sonny-evolution.png)
 
 ---
 
-I built Sonny in 2025–2026 while leading Professional Services. The first piece is the one I'm sure about. The order after that is roughly right.
+## 01 / Just me — built and used
 
-```mermaid
-flowchart LR
-    A["① Just me<br/>recaps · tickets · digest"] --> B["② My team's week<br/>agendas · status reports"]
-    B --> C["③ The copilot<br/>our playbook for everyone"]
-    C --> D["④ The bigger idea<br/>Prep in a Box"]
-    D --> E["⑤ Since I left<br/>check first, then build"]
+I started with meeting recaps and support tickets because I knew exactly how much time they took. Sonny helped turn my meeting notes into structured drafts I could review, bringing a 30–60 minute workflow down to under five minutes in my own use.
 
-    classDef built fill:#e8f5e9,stroke:#2e7d32,color:#1b5e20
-    classDef idea fill:#f3f4f6,stroke:#9ca3af,color:#374151,stroke-dasharray:4 3
-    class A,B,C built
-    class D,E idea
-```
+Then came the Monday digest: a list of what was *still* open, not a recycled list of things I'd already handled.
 
-<sub>Green: built and used · Grey: designed, not built</sub>
+**What clicked:** Writing wasn't the hardest part. Figuring out what mattered, what was missing, and what needed my attention was.
 
----
+## 02 / My team's week — built and used
 
-### ① Just me
-**Why:** I didn't love writing support tickets, and incomplete ones kept customers waiting.
-**What I built:** a morning helper that turns meeting notes into a recap and a complete ticket, then a Monday list of what's still open.
-**What clicked:** the writing was never the hard part. Knowing what was done, what was missing, and what needed me was.
+Managing a growing global team came with its own recurring admin. I used Sonny to help prepare Tuesday meeting agendas, weekly new-consultant status updates, and a catch-up after vacation.
 
-### ② My team's week
-**Why:** running a growing global team meant weekly meetings, reports to leadership, and new hires to onboard.
-**What I built:** a Tuesday agenda draft, a Friday status report on new consultants, and a one-time catch-up for coming back from vacation.
-**What clicked:** every one of these only worked for me. My inbox, my channels, my team.
+Useful? Absolutely. Ready to hand to everyone else? Not quite.
 
-### ③ The copilot
-**Why:** the team grew from 4 to 15, and how well a project went depended on who'd trained whom.
-**What I built:** our playbook written down for Sonny, with the method kept separate from the product details, and eight modes consultants could use. I started piloting it right before I left.
-**What clicked:** the method could travel. The product details were the part you swap out.
+These workflows depended on **my** inbox, channels, and responsibilities.
 
-### ④ The bigger idea
-**Why:** every new customer started with the same busywork, and the most important step (spotting what doesn't add up) was the one most likely to get skipped.
-**What I designed:** hand Sonny the contract and the handoff, and get back the risks, a plan, a set-up site and a personalized room for the customer.
+**What clicked:** A personal automation doesn't automatically become a scalable team product.
 
-### ⑤ Since I left
-I've kept working on it as a product idea that starts with that check. [Here's the plan.](08-whats-next.md)
+## 03 / The copilot — built, then piloted
+
+Our team grew from 4 to 15, and a lot of our implementation knowledge still lived in people's heads. Newer consultants shouldn't have to wait for the right person to come online to find an answer.
+
+I organized our playbook into a knowledge copilot with eight consultant use cases, including call prep, contract review, troubleshooting, and launch readiness.
+
+I separated the *way we implement* from *how specific products work*. That meant the methodology could stay consistent even when product details changed.
+
+I started sharing Sonny with consultants before leaving the company, but didn't collect formal adoption or impact results.
+
+**What clicked:** The reusable part wasn't my personal workflow. It was the team's shared way of working.
 
 ---
 
-✅ Built and used · 🛠 Piloted (no results collected) · 📐 Planned, not built · 💡 What I'd do now
+## 04 / The bigger idea — designed, not built
 
-## What I built
+By then I was thinking about the start of every customer implementation: contracts, handoffs, scoping, project plans, provisioning, and onboarding resources.
 
-| Piece | Status | What happened |
+What if Sonny could help pull those pieces together?
+
+I called the concept **Implementation Prep in a Box**. The idea was to check the contract and handoff for missing information or contradictions, then help a consultant prepare the plan and customer setup.
+
+I mapped out the concept, but didn't deploy it.
+
+## 05 / What I'd do now — proposed next step
+
+I've kept thinking about Sonny since leaving. And I wouldn't start by building the entire platform.
+
+I'd start with **one readiness check**: give Sonny a contract and handoff, have him flag gaps and risks, and see whether consultants find issues earlier.
+
+If that works, *then* build toward planning, provisioning, and personalized onboarding.
+
+**What clicked:** The most useful AI output might not be a finished project plan. It might be the question that prevents a bad one.
+
+---
+
+## What actually made it out of my head?
+
+![Built, piloted and planned capabilities](assets/02-capability-status.png)
+
+<details>
+<summary><b>Show the capability details</b></summary>
+
+| Capability | Status | What I know |
 |---|---|---|
-| Meeting recap + support ticket | ✅ | 30–60 min down to under 5 per call; complete tickets |
-| Monday digest | ✅ | A double-checked "still open" list every week |
-| Team meeting agenda | ✅ | A draft ready every Tuesday |
-| New consultant status report | ✅ | A weekly update for my manager |
-| Back-from-vacation catch-up | ✅ | Used once |
-| The copilot | ✅ | Used in my own prep, contract reviews and launch checks |
-| Sharing it with the team | 🛠 | Started right before I left |
+| Meeting recaps and support tickets | Built and used | 30–60 minutes down to under five in my workflow |
+| Monday digest, agendas and status reports | Built and used | Used for my own management routines |
+| Knowledge copilot | Built and used personally | Supported prep, reviews and launch checks |
+| Team sharing | Early pilot | Started before I left; no formal results collected |
+| Contract and handoff risk review | Designed | Not deployed |
+| Automated planning and provisioning | Designed | Not deployed; time savings unvalidated |
+| Personalized customer resource room | Designed | Not deployed |
 
-## What I'd planned: Prep in a Box
+</details>
 
-| Piece | Status | Why it mattered |
-|---|---|---|
-| Read the contract and handoff | 📐 | Catch contradictions and gaps before kickoff |
-| Build the project plan | 📐 | Owners and milestones from day one |
-| Set up the customer's site | 📐 | About an hour saved per customer *(estimate)* |
-| A personalized room for the customer | 📐 | One place for their goals, plan, recordings and next steps |
-| The copilot, start to finish | 📐 | The same playbook from kickoff to handoff |
+The lesson I keep coming back to: **building something helpful for yourself is one challenge. Making it trustworthy and useful for a whole team is a different one.**
+
+And that's the part I'd love to keep working on.
 
 ---
 
-<p align="center"><a href="02-the-problems.md">← 🧩 The Problems (and the People)</a> &nbsp;·&nbsp; <a href="04-what-sonny-did.md">🛠️ What Sonny Did →</a></p>
+<sub>Personal portfolio case study. Built, piloted and proposed capabilities are intentionally separated.</sub>
+
+<p align="center"><a href="02-the-problems.md">← The Problems (and the People)</a> &nbsp; · &nbsp; <a href="../README.md">Back to Sonny</a> &nbsp; · &nbsp; <a href="04-what-sonny-did.md">What Sonny Did →</a></p>
