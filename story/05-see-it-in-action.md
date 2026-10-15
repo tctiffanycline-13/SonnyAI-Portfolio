@@ -14,7 +14,7 @@ The examples below are **illustrative reconstructions using a fictional customer
 
 The original problem: a call ends, and the real admin work begins. I used Sonny to turn meeting summaries into a recap I could review and send.
 
-![Example customer recap drafted by Sonny](assets/01-meeting-recap.png)
+![Example customer recap drafted by Sonny](https://github.com/tctiffanycline-13/SonnyAI-Portfolio/blob/main/assets/10-meeting-recap.png)
 
 **What mattered:** clear decisions, assigned next steps, and missing information visibly marked as `[pending]`. Sonny didn't send the email; I reviewed it first.
 
@@ -34,7 +34,7 @@ The original problem: a call ends, and the real admin work begins. I used Sonny 
 
 I didn't want Support to spend another round asking for information we already had. Sonny prepared a consistent ticket draft with the basics in one place.
 
-![Example structured support ticket](assets/02-support-ticket.png)
+![Example structured support ticket](https://github.com/tctiffanycline-13/SonnyAI-Portfolio/blob/main/assets/11-support-ticket.png)
 
 **What mattered:** customer, issue, affected users, impact, requested action, and urgency. Sonny was also instructed to check for an existing open ticket before suggesting another.
 
@@ -51,7 +51,7 @@ A draft wasn't a diagnosis. If the cause wasn't confirmed, Sonny couldn't preten
 
 The team copilot was built to make implementation knowledge easier to access. One important use case was helping consultants think through scope questions without making promises on the company's behalf.
 
-![Example consultant copilot response](assets/03-consultant-copilot.png)
+![Example consultant copilot response](https://github.com/tctiffanycline-13/SonnyAI-Portfolio/blob/main/assets/12-consultant-copilot.png)
 
 **What mattered:** a useful next step, grounded in the agreed scope. Not an invented product capability or an automatic approval.
 
@@ -70,7 +70,5 @@ In my own recap and ticket workflow, preparation dropped from roughly **30–60 
 The part I wanted to test next was whether the same quality and time savings held up for other consultants — and whether that translated into a better customer experience.
 
 ---
-
-<sub>Examples are fictional and reconstructed for portfolio purposes. No real customer data or proprietary configurations are shown.</sub>
 
 <p align="center"><a href="04-what-sonny-did.md">← Previous: What Sonny Did</a> &nbsp; · &nbsp; <a href="../README.md">Back to Sonny</a> &nbsp; · &nbsp; <a href="06-keeping-ai-in-check.md">Next: Keeping AI in Check →</a></p>
