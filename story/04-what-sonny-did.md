@@ -12,17 +12,17 @@ This chapter covers **what I built and used**, then **what I built and piloted**
 
 ## 01 / The personal assistant
 
-![Five personal Sonny workflows](assets/01-personal-workflows.png)
+![Five personal Sonny workflows](https://github.com/tctiffanycline-13/SonnyAI-Portfolio/blob/main/assets/08-personal-workflows.png)
 
 I used **Claude** with tools we already worked in: Gmail, Slack, Google Docs and Sheets, Zoom meeting summaries, a browser, and our time-tracking system. Some workflows ran on a schedule; others were one-off requests.
 
 ### The one I used most: meeting follow-ups
 
-**The problem:** After a customer call, I still had to turn my notes into a recap and, if something was broken, a support ticket.
+- **The problem:** After a customer call, I still had to turn my notes into a recap and, if something was broken, a support ticket.
 
-**Sonny's job:** Use the meeting summary, customer directory, and open tickets to prepare drafts for me to review.
+- **Sonny's job:** Use the meeting summary, customer directory, and open tickets to prepare drafts for me to review.
 
-**The result:** My observed prep time went from **30–60 minutes to under five minutes**. That's from my own use, not a controlled team-wide measurement.
+- **The result:** My observed prep time went from **30–60 minutes to under five minutes**. That's from my own use, not a controlled team-wide measurement.
 
 <details>
 <summary><b>See the workflow rules (and a workaround I'm still proud of)</b></summary>
@@ -63,7 +63,7 @@ My personal workflows were useful, but I kept seeing a bigger problem: **the tea
 
 I built and began piloting a knowledge copilot that consultants could ask for help with preparation, scoping, troubleshooting, and launch decisions.
 
-![Two types of knowledge behind Sonny](assets/02-copilot-knowledge.png)
+![Two types of knowledge behind Sonny](https://github.com/tctiffanycline-13/SonnyAI-Portfolio/blob/main/assets/09-copilot-knowledge.png)
 
 I organized its knowledge into **seven files**: four about how we work, and three about how the products work. That separation was deliberate. Our implementation methodology should be reusable even as products, packaging, and features change.
 
